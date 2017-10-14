@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.kgyshuhei.kotlin_okhttp_retrofit"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 2
+        versionName "1.00.01"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            versionNameSuffix '.d'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    // Kotlin
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    kapt 'com.android.databinding:compiler:2.3.3'
+    // OkHttp3
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    // Retrofit2
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    // GSON
+    compile 'com.google.code.gson:gson:2.8.2'
+    // RxJava
+    compile 'io.reactivex.rxjava2:rxjava:2.1.4'
+    // RxAndroid
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    // RxLifecycle
+    compile 'com.trello.rxlifecycle2:rxlifecycle:2.2.0'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-android:2.2.0'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.0'
+    // Timber
+    compile 'com.jakewharton.timber:timber:4.5.1'
+    testCompile 'junit:junit:4.12'
+}
+repositories {
+    mavenCentral()
+    maven {
+        // Google Maven GitHubRepositoryResponse
+        url "https://maven.google.com"
+    }
+}
