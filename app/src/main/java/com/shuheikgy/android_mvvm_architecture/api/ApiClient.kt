@@ -1,8 +1,8 @@
-package com.kgyshuhei.kotlin_okhttp_retrofit.api
+package com.shuheikgy.android_mvvm_architecture.api
 
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.GsonBuilder
-import com.kgyshuhei.kotlin_okhttp_retrofit.network.HttpClient
+import com.shuheikgy.android_mvvm_architecture.network.HttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory

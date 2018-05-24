@@ -1,6 +1,6 @@
-package com.kgyshuhei.kotlin_okhttp_retrofit.repository
+package com.shuheikgy.android_mvvm_architecture.repository
 
-import com.kgyshuhei.kotlin_okhttp_retrofit.api.GitHubRepositoryResponse
+import com.shuheikgy.android_mvvm_architecture.api.GitHubRepositoryResponse
 import io.reactivex.Observable
 
 /**

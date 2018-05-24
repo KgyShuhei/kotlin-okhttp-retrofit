@@ -1,10 +1,10 @@
-package com.kgyshuhei.kotlin_okhttp_retrofit.view.main
+package com.shuheikgy.android_mvvm_architecture.view.main
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
-import com.kgyshuhei.kotlin_okhttp_retrofit.R
-import com.kgyshuhei.kotlin_okhttp_retrofit.databinding.ActivityMainBinding
-import com.kgyshuhei.kotlin_okhttp_retrofit.view.base.BaseActivity
+import com.shuheikgy.android_mvvm_architecture.R
+import com.shuheikgy.android_mvvm_architecture.databinding.ActivityMainBinding
+import com.shuheikgy.android_mvvm_architecture.view.base.BaseActivity
 import timber.log.Timber
 
 class MainActivity : BaseActivity() {

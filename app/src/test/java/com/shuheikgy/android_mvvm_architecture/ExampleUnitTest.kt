@@ -1,4 +1,4 @@
-package com.kgyshuhei.kotlin_okhttp_retrofit
+package com.shuheikgy.android_mvvm_architecture
 
 import org.junit.Test
 

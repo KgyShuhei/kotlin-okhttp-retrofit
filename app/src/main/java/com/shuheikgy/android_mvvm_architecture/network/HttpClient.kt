@@ -1,6 +1,6 @@
-package com.kgyshuhei.kotlin_okhttp_retrofit.network
+package com.shuheikgy.android_mvvm_architecture.network
 
-import com.kgyshuhei.kotlin_okhttp_retrofit.BuildConfig
+import com.shuheikgy.android_mvvm_architecture.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
