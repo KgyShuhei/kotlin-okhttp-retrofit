@@ -1,12 +1,13 @@
-package com.kgyshuhei.kotlin_okhttp_retrofit.view.main
+package com.shuheikgy.android_mvvm_architecture.view.main
 
 import android.view.View
-import com.kgyshuhei.kotlin_okhttp_retrofit.repository.impl.GitHubRepositoryImpl
-import com.kgyshuhei.kotlin_okhttp_retrofit.view.base.BaseActivityViewModel
+import com.shuheikgy.android_mvvm_architecture.repository.impl.GitHubRepositoryImpl
+import com.shuheikgy.android_mvvm_architecture.view.base.BaseActivityViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.repos_textview
 import timber.log.Timber
+
 
 /**
  * Created by shuhei_k on 2017/09/10.
@@ -17,7 +18,7 @@ class MainActivityViewModel(val activity: MainActivity) : BaseActivityViewModel(
 
     fun onClickButton(view: View) {
 
-        repository.getRepositoryList("KgyShuhei")
+        repository.getRepositoryList("ShuheiKgy")
                 .compose(activity.bindToLifecycle())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

@@ -7,13 +7,13 @@
     <data>
         <variable
             name="viewModel"
-            type="com.kgyshuhei.kotlin_okhttp_retrofit.view.main.MainActivityViewModel" />
+            type="com.shuheikgy.android_mvvm_architecture.view.main.MainActivityViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.kgyshuhei.kotlin_okhttp_retrofit.view.main.MainActivity">
+        tools:context="com.shuheikgy.android_mvvm_architecture.view.main.MainActivity">
 
         <TextView
             android:id="@+id/repos_textview"

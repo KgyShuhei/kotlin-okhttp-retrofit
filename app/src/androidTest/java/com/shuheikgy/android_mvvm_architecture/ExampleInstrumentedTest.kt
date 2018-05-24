@@ -1,6 +1,5 @@
-package com.kgyshuhei.kotlin_okhttp_retrofit
+package com.shuheikgy.android_mvvm_architecture
 
-import android.content.Context
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
 

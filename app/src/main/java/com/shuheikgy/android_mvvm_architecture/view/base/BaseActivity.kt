@@ -1,4 +1,4 @@
-package com.kgyshuhei.kotlin_okhttp_retrofit.view.base
+package com.shuheikgy.android_mvvm_architecture.view.base
 
 import android.os.Bundle
 import android.os.PersistableBundle

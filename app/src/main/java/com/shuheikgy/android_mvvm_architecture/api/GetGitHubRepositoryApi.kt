@@ -1,4 +1,4 @@
-package com.kgyshuhei.kotlin_okhttp_retrofit.api
+package com.shuheikgy.android_mvvm_architecture.api
 
 import io.reactivex.Observable
 import retrofit2.http.GET
