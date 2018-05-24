@@ -1,2 +1,2 @@
 # kotlin-okhttp-retrofit
-This is an example of Okhttp and Retrofit coded with Kotlin.
+This is an example of Android-MVVM-Architecture coded with Kotlin.
